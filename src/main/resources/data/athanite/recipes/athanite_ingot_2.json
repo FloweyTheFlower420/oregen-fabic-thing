@@ -1,7 +1,8 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    "athanite:athanite_block"
+  "ingredients": [{
+      "item": "athanite:athanite_block"
+    }
   ],
   "result": {
     "item": "athanite:athanite_ingot",
