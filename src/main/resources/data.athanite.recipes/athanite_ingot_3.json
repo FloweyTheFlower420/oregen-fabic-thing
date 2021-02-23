@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "athanite_ore",
+  "result": "athanite:athanite_ingot",
+  "experience": 69
+}
