@@ -1,6 +1,8 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": "athanite_ore",
+  "ingredient": [{
+    "item": "athanite_ore"
+   }],
   "result": "athanite:athanite_ingot",
   "experience": 69
 }
