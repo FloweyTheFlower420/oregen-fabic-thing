@@ -21,7 +21,9 @@ import java.util.Random;
 public class OreFeatureMixin {
     @Inject(method = "generate(Lnet/minecraft/world/StructureWorldAccess;Lnet/minecraft/world/gen/chunk/ChunkGenerator;Ljava/util/Random;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/world/gen/feature/OreFeatureConfig;)Z", at = @At("HEAD"), cancellable = true)
     private void generate(StructureWorldAccess structureWorldAccess, ChunkGenerator chunkGenerator, Random random, BlockPos blockPos, OreFeatureConfig oreFeatureConfig, CallbackInfoReturnable<Boolean> cir) {
+        System.out.println("GENERATED CHUNK!");
         if(oreFeatureConfig.state.getBlock().is(ModMain.ATHANITE_ORE_BLOCK)) {
+            System.out.println("GENERATED ORE!");
             float f = random.nextFloat() * 3.1415927F;
             float g = (float)oreFeatureConfig.size / 8.0F;
             int i = MathHelper.ceil(((float)oreFeatureConfig.size / 16.0F * 2.0F + 1.0F) / 2.0F);
