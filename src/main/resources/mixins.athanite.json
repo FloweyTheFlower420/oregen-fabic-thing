@@ -4,7 +4,7 @@
   "package": "com.floweytf.modthing.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "OreFeatureMixin"
+    "BiomeMixin"
   ],
   "injectors": {
     "defaultRequire": 1
